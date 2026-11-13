@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Water Reminder Popup</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main id="root">
+    <div id="actor" class="actor">
+      <div id="box" class="box" data-hit><span id="boxText"></span></div>
+
+      <div id="stage" class="stage">
+        <div id="char" class="char idle" data-hit>
+          <img id="sprite" alt="">
+          <div id="glass" class="glass" hidden><div class="water"></div></div>
+          <div id="fallback" class="fallback" hidden></div>
+        </div>
+        <div id="ring" class="ring" data-hit hidden>
+          <svg viewBox="0 0 120 120" width="200" height="200">
+            <circle cx="60" cy="60" r="52" class="ring-bg"/>
+            <circle id="ringFg" cx="60" cy="60" r="52" class="ring-fg" stroke-dashoffset="326.7" transform="rotate(-90 60 60)"/>
+          </svg>
+          <span id="ringText"></span>
+        </div>
+      </div>
+
+      <div id="buttons" class="buttons">
+        <button id="yes" class="btn yes" data-hit>YES, I DRANK</button>
+        <button id="snooze" class="btn snooze" data-hit>SNOOZE</button>
+      </div>
+    </div>
+  </main>
+  <canvas id="confetti" width="520" height="460"></canvas>
+  <script src="popup.js"></script>
+</body>
+</html>

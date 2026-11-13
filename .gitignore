@@ -1,0 +1,27 @@
+# agentflow
+.workflow/logs/
+.claude/settings.local.json
+CLAUDE.local.md
+.env
+.env.*
+!.env.example
+node_modules/
+
+# Local AI-assistant tooling (not part of the app)
+.agents/
+.claude/
+.workflow/
+.mcp.json
+AGENTS.md
+CLAUDE.md
+CLAUDE.md.save
+
+# OS / editor / build
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+dist/
+out/
+*.log
+__pycache__/

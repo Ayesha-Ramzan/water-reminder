@@ -1,0 +1,20 @@
+{
+  "name": "Cat",
+  "style": "smooth",
+  "facing": "left",
+  "height": 210,
+  "glass": {
+    "hand": [16, 90],
+    "mouth": [17, 52]
+  },
+  "face": {
+    "brows": [
+      [10.5, 18.5],
+      [23.5, 18]
+    ],
+    "browLen": 9,
+    "center": [17, 30],
+    "radius": 15,
+    "mark": [33, 7]
+  }
+}

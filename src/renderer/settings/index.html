@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; img-src 'self'; style-src 'self'; script-src 'self'">
+  <title>Water Reminder Settings</title>
+  <link rel="stylesheet" href="settings.css">
+</head>
+<body>
+  <header>
+    <h1>SETTINGS</h1>
+    <button id="close" class="close" type="button" aria-label="Close settings" title="Close (Esc)">&#x2715;</button>
+  </header>
+  <form id="form" novalidate>
+    <label>Reminder every (minutes)
+      <input id="intervalMin" type="number" step="1">
+      <small class="hint" id="h-intervalMin"></small><small class="err" id="e-intervalMin"></small>
+    </label>
+    <div class="row">
+      <label>Active from <input id="startTime" type="time"><small class="err" id="e-startTime"></small></label>
+      <label>Active until <input id="endTime" type="time"><small class="err" id="e-endTime"></small></label>
+    </div>
+    <label>Daily goal (glasses)
+      <input id="dailyGoal" type="number" step="1">
+      <small class="hint" id="h-dailyGoal"></small><small class="err" id="e-dailyGoal"></small>
+    </label>
+    <label>Snooze (minutes)
+      <input id="snoozeMin" type="number" step="1">
+      <small class="hint" id="h-snoozeMin"></small><small class="err" id="e-snoozeMin"></small>
+    </label>
+    <label>Character
+      <select id="character"></select>
+      <small class="err" id="e-character"></small>
+    </label>
+    <label>Character comes from
+      <select id="enterFrom"></select>
+      <small class="err" id="e-enterFrom"></small>
+    </label>
+    <label class="check"><input id="autoStart" type="checkbox"> Start when I log in</label>
+    <button type="submit" class="save">SAVE</button>
+    <p id="status" role="status"></p>
+  </form>
+  <script src="settings.js"></script>
+</body>
+</html>

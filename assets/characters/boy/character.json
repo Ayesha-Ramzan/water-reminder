@@ -1,0 +1,36 @@
+{
+  "name": "Boy",
+  "style": "smooth",
+  "walkFps": 8,
+  "walkFacing": "right",
+  "glass": {
+    "hand": [83, 68],
+    "mouth": [50, 31]
+  },
+  "rig": {
+    "body": "body.png",
+    "legs": {
+      "left": {
+        "image": "leg_left.png",
+        "pivot": [35.7, 65.9],
+        "swing": 6
+      },
+      "right": {
+        "image": "leg_right.png",
+        "pivot": [58.6, 65.9],
+        "swing": 6
+      }
+    }
+  },
+  "face": {
+    "brows": [
+      [34, 18.5],
+      [63, 18.5]
+    ],
+    "browLen": 15,
+    "center": [50, 26],
+    "radius": 22,
+    "mark": [80, 9],
+    "mouth": [51, 30.6, 20, 4.5]
+  }
+}

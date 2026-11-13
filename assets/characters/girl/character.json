@@ -1,0 +1,51 @@
+{
+  "name": "Girl",
+  "style": "smooth",
+  "walkFps": 8,
+  "walkFacing": "right",
+  "glass": {
+    "hand": [75, 67],
+    "mouth": [53, 31]
+  },
+  "rig": {
+    "body": "body.png",
+    "glassArm": "right",
+    "arms": {
+      "right": {
+        "image": "arm_right.png",
+        "pivot": [75.7, 54.9],
+        "drink": [-2, -5, 150],
+        "wave": [-150, -170]
+      },
+      "left": {
+        "image": "arm_left.png",
+        "pivot": [35, 54.9],
+        "drink": [0, 0, 0],
+        "wave": [135, 165]
+      }
+    },
+    "legs": {
+      "left": {
+        "image": "leg_left.png",
+        "pivot": [44.9, 57.6],
+        "swing": 6
+      },
+      "right": {
+        "image": "leg_right.png",
+        "pivot": [61.2, 57.6],
+        "swing": 6
+      }
+    }
+  },
+  "face": {
+    "brows": [
+      [38, 17.5],
+      [64, 17.5]
+    ],
+    "browLen": 12,
+    "center": [50, 25],
+    "radius": 17,
+    "mark": [74, 9],
+    "mouth": [51, 30.4, 18, 4.5]
+  }
+}
